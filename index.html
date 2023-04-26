@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">   
+        <title>Index of /</title>
+
+        <meta property="og:title" content="Index of /" />
+        <meta property="og:type" content="website" />
+        <script type="text/javascript">
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: hsl(0, 0%, 100%);
+                color: hsl(0, 0%, 10%);
+                font-family: 'JetBrains Mono', monospace;
+                font-size:15px;
+                margin: 1em;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: hsl(0, 0%, 10%);
+                    color: hsl(0, 0%, 100%);
+                }
+            }
+
+            a {
+                color: hsl(0, 0%, 91%);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #ff6d6d;
+            }
+
+            .listing-entry-name a:hover {
+                text-decoration-style:dotted;
+                color:#ff6d6d;
+            }
+            
+            .container {
+                margin: auto;
+            }
+
+            .header {
+                align-items: center;
+                display: flex;
+            }
+
+            .header-icon {
+                width: 60px;
+            }
+
+            @media (prefers-color-scheme: dark) {
+
+                .header-icon {
+                    fill: hsl(0, 0%, 100%);
+                }
+
+            }
+
+            .header-link {
+                padding-left: 1.3em;
+            }
+
+            .listing {
+                margin-top:30px;
+                margin-bottom: 2em;
+                
+            }
+
+            .listing-entry {
+                display: grid;
+                gap: 1em;
+                grid-template-columns: repeat(12, 1fr);
+                margin-bottom: 0.5em;
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+
+                .listing-entry {
+                    display: block;
+                }
+
+            }
+
+            .listing-entry .listing-entry-name {
+                grid-column-end: span 8;
+                overflow-wrap: break-word;
+                width: 100%;
+                margin-top: 1%;
+                
+            }
+
+            ::selection {
+                background-color: rgb(92, 92, 92);
+                color: #ff6d6d;
+              }
+              
+
+            .footer-text:hover {
+                color: #ff6d6d;
+                cursor: pointer;
+                animation: move-vertical 1.0s ease-in-out alternate infinite;    
+            }
+
+            .listing-entry .listing-entry-modified-time {
+                grid-column-end: span 3;
+                overflow-wrap: break-word;
+                width: 100%;
+                margin-top: 1%;
+            }
+
+            .listing-entry .listing-entry-size {
+                grid-column-end: span 1;
+                overflow-wrap:break-word;
+                width: 100%;
+                margin-top: 1%;
+            }
+
+            .footer {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                bottom: 20px;
+            }
+
+            .header-link i {
+                margin-right: 4px;
+                }
+
+            .header-icon {
+            animation: move-vertical 1.0s ease-in-out alternate infinite;
+            }
+            
+            @keyframes move-vertical {
+                0% {
+                transform: translateY(0);
+                }
+                100% {
+                transform: translateY(5px);
+            }
+            }
+            .listing-entry-name a {
+                color: #eaeaea; /* metin rengi */
+                text-decoration:none; /* alt çizgiyi kaldırır */
+            }
+            .listing-entry-name i {
+                color: #e1b000; /* ikon rengi */
+            }  
+            #popup {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: none;
+            }
+            
+            #popup-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: hsl(0, 0%, 10%);
+                padding: 20px;
+                text-align: center;
+                border-radius: 30px;
+            }
+            
+            #popup-content h2 {
+                margin-top: 0;
+            }
+            
+            #popup-content button {
+                margin-top: 20px;
+            }
+                
+            .btn{
+                flex-wrap: wrap;
+                border-style: solid;
+                border-radius: 5px;
+                font-size: 14px;
+                position: sticky;
+                align-items: center;
+                justify-content: center;
+                display:flex;
+                background-color: transparent;
+                border-color: #ffffff;
+                color: #ffffff;
+                cursor: pointer;
+                margin: auto;
+                height: 25px;
+                width: 80px;
+                font-family: 'JetBrains Mono', monospace;
+            }
+
+            #pstyle {
+                margin-top: 2%;
+                line-height: 1.8;
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <svg class="header-icon" viewBox="0 0 130 86" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M64 0 96 0 96 4 100 4 100 22 80 22 80 26 92 26 92 30 76 30 76 38 84 38 84 46 80 46 80 42 76 42 76 56 72 56 72 62 68 62 68 66 64 66 64 82 68 82 68 86 60 86 60 74 56 74 56 70 52 70 52 74 48 74 48 78 44 78 44 82 48 82 48 86 40 86 40 70 39 70 39 69 38 69 38 68 37 68 37 67 36 67 36 66 32 66 32 62 28 62 28 58 24 58 24 54 20 54 20 30 24 30 24 38 28 38 28 42 32 42 32 46 40 46 40 42 44 42 44 38 50 38 50 34 56 34 56 30 60 30 60 4 64 4 64 0ZM72 6 68 6 68 10 72 10 72 6ZM0 70 32 70 32 72 0 72 0 70ZM72 70 128 70 128 72 72 72 72 70ZM110 76 116 76 116 78 110 78 110 76ZM12 78 20 78 20 80 12 80 12 78ZM0 84 8 84 8 86 0 86 0 84ZM28 84 32 84 32 86 28 86 28 84ZM96 84 104 84 104 86 96 86 96 84Z"></path>
+                </svg>
+                <a class="header-link" href="index.html"><i class="ri-home-5-line"></i>Home</a>
+                <a class="header-link" href="https://github.com/shadesofdeath/ShadesToolkit"><i class="ri-github-fill"></i>Github</a>
+                <a class="header-link" href="https://discord.gg/G5jwWYpA"><i class="ri-discord-line"></i>Discord</a>
+                <a class="header-link" href="#" onclick="openPopup()"><i class="ri-information-line"></i>About Us</a>
+                <div id="popup">
+                <div id="popup-content">
+                    <h2>About Us</h2>
+                    <p id="pstyle">🧰 It is a tool that allows you to customize your Windows ISO files and create your own custom Windows image by applying various customizations.</p>
+                    <button class="btn btn-outline-dark" id="popup_close" onclick="closePopup()">Close</button>
+                </div>
+                </div>
+            </div>
+            <div class="listing">
+                <div class="listing-entry">
+                    <div class="listing-entry-name"><a id="acolor" href="#"><i class="ri-folder-fill"></i> ../</a></div>
+                    <div class="listing-entry-modified-time">&mdash;</div>
+                    <div class="listing-entry-size">—</div>
+                </div>
+                <div class="listing-entry">
+                    <div class="listing-entry-name"><a acolor href="toolkit_tr.html"><i class="ri-folder-fill"></i> ShadesToolkit TR</a></div>
+                    <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
+                    <div class="listing-entry-size">18.05MB</div>
+                </div>
+                <div class="listing-entry">
+                    <div class="listing-entry-name"><a acolor href="toolkit_en.html"><i class="ri-folder-fill"></i> ShadesToolkit EN</a></div>
+                    <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
+                    <div class="listing-entry-size">18.05MB</div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-text" onclick="window.location.href='https://github.com/shadesofdeath';">made with ❤️ by ShadesOfDeath</div>
+            </div>
+        </div>
+    </body>
+</html>
