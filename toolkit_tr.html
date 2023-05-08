@@ -42,12 +42,12 @@
             }
 
             a:hover {
-                color: #ff6d6d;
+                color: #6d7bff;
             }
 
             .listing-entry-name a:hover {
                 text-decoration-style:dotted;
-                color:#ff6d6d;
+                color:#6d7bff;
             }
             
             .container {
@@ -107,12 +107,12 @@
 
             ::selection {
                 background-color: rgb(92, 92, 92);
-                color: #ff6d6d;
+                color: #6d7bff;
               }
               
 
             .footer-text:hover {
-                color: #ff6d6d;
+                color: #6d7bff;
                 cursor: pointer;
                 animation: move-vertical 1.0s ease-in-out alternate infinite;    
             }
@@ -263,137 +263,143 @@
                 <a class="header-link" href="https://discord.gg/G5jwWYpA"><i class="ri-discord-line"></i>Discord</a>
                 <a class="header-link" href="#" onclick="openAboutPopup(); event.preventDefault();"><i class="ri-information-line"></i>About Us</a>
                 <div id="changelog-popup">
-                <div id="popup-content2" style="overflow-y: scroll; height: 200px;">
-                    <h2>Changelog</h2>
-                    <p id="pstyle">★★ Version 2.0 ★★<br>
-                        Unattended Application Installation Feature was problematic, now fixed. <br>
-                        Minor design changes. <br>
-                        Some bug fixes. <br> 
-                        Added feature to change Image Name and Description. <br>
-                        Hide Taskbar MeetNow icon on Windows 10. <br>
-                        Disable Bing search in Start Menu. <br>
-                        <br>
-                        ★★ Version 1.9 ★★<br>
-                        Added Unattended Program Installation feature (Experimental!)<br>
-                        Hide the Taskbar MeetNow icon.<br>
-                        Disable Bing search in the Start Menu.<br>
-                        <br>
-                        ★★ Version 1.8 Hotfix ★★<br>
-                        All registry issues have been resolved.<br>
-                        Instead of deleting indexes one by one in the Index Deletion feature, now multiple indexes can be deleted at once.<br>
-                        <br>
-                        ★★ Version 1.8 ★★<br>
-                        Simplified the Windows 11 TPM Fix feature.<br>
-                        Added GUI interface to the ISO Creation section.<br>
-                        Added option to never prompt for User Account Control settings.<br>
-                        Added option to show detailed information during Start-up, Shut-down, Log-on and Log-off.<br>
-                        Added automatic NumLock activation on start-up.<br>
-                        Improved control mechanisms and fixed several bugs.<br>
-                        <br>
-                        ★★ Version 1.7 ★★<br>
-                        Added feature to add shortcut to Context Menu.<br>
-                        Updated to WimLib version 1.14.<br>
-                        Some specific improvements and bug fixes.<br>
-                        <br>
-                        ★★ Version 1.6 ★★<br>
-                        <br>
-                        Added Microsoft Store integration feature<br>
-                        Added GUI interface to the ISO file extraction section in the folder<br>
-                        Updated the interface of the ToolkitHelper debloat method to be more modern.<br>
-                        <br>
-                        ★★ Version 1.5 ★★<br>
-                        <br>
-                        Added Dism Reset Base<br>
-                        Added the ability to integrate drivers.<br>
-                        <br>
-                        ★★ Version 1.4 ★★<br>
-                        <br>
-                        ToolkitHelper method added to the Debloat section<br>
-                        Some minor bugs fixed<br>
-                        <br>
-                        ★★ Version 1.3 ★★<br>
-                        <br>
-                        Minor bug fixes<br>
-                        The problem of creating a [DELETED] folder after saving the changes has been resolved.<br> This means that the wim size will now be much smaller.
-                        Dism Reset Base feature has been removed,<br> and you can run the alternative<br> "Compress System Files after the System is Booted" <br>feature instead.
-                        15 new Windows services added to the list.<br>
-                        All services in the list can be disabled with a single click.<br>
-                        <br>
-                        ★★ Version 1.2 ★★<br>
-                        <br>
-                        Improved Autounattend.xml file creation section.<br>
-                        Improved DefaultLayout.xml feature<br>
-                        Make Windows App Theme Dark Mode<br>
-                        Make Windows Theme Dark Mode<br>
-                        Add My Computer shortcut to Desktop<br>
-                        Add Control Panel shortcut to Desktop<br>
-                        Fixed the feature to turn off automatic installation of Microsoft Teams<br>
-                        Add MASS_AIO Windows Activation Script to Desktop<br>
-                        Bypass Windows 11 TPM/SecureBoot feature now works<br>
-                        Added a small addition for developer support<br>
-                        <br>
-                        ★★ Version 1.1 ★★<br>
-                        <br>
-                        Windows Services added<br>
-                        ISO Output will now be saved in the "ISO" folder<br>
-                        Windows Update settings added to select the next Windows version<br>
-                        Autounattend.xml file creation feature added<br>
-                        Some spelling mistakes fixed.<br>
-                        <br>
-                        ★★ Version 1.0 ★★<br>
-                        <br>
-                        Initial build v1.0 Beta<br>
-                        Debloat<br>
-                        Remove OneDrive<br>
-                        Remove Microsoft Edge<br>
-                        Remove Windows Defender<br>
-                        Remove WinPE<br>
-                        Remove Internet Explorer<br>
-                        Enable-Disable Windows Features<br>
-                        Enable Windows Photo Viewer<br>
-                        Add Take Ownership to right-click menu<br>
-                        Remove 260 character limit<br>
-                        Disable Visual Feedback<br>
-                        Add End Unresponsive Processes to right-click menu<br>
-                        Add Empty Recycle Bin to right-click menu<br>
-                        Disable Step Recorder<br>
-                        Disable AutoPlay<br>
-                        Disable Enhanced Directory Creation<br>
-                        Disable App Launch Tracking<br>
-                        Turn off XBox Game Bar<br>
-                        Disable Hardware Accelerated GPU Scheduling<br>
-                        Turn off ReadyBoost<br>
-                        Add Old Volume Control to right-click menu<br>
-                        Add Copy as Path option to right-click menu<br>
-                        Disable JPEG Desktop Wallpaper Quality Reduction<br>
-                        Bypass Windows 11 TPM/SecureBoot<br>
-                        Disable Reserved Storage<br>
-                        Remove "Your device does not meet the minimum requirements" watermark on Windows 11 Desktop<br>
-                        Disable Modern Standby<br>
-                        Remove Windows Defender<br>
-                        Disable "Let's finish setting up your device" prompt in Windows 11<br>
-                        Disable Privacy Settings Experience during sign-in in Windows 11<br>
-                        Disable OneDrive in Windows 11<br>
-                        Disable Kernel Isolation Memory Integrity in Windows 11<br>
-                        Disable including drivers in Windows updates<br>
-                        Disable automatic Windows upgrade<br>
-                        Remove Chat button from taskbar in Windows 11<br>
-                        Restore old right-click context menu in Windows 11<br>
-                        Turn off automatic installation of Microsoft Teams<br>
-                        Start Dism Reset Base process<br>
-                        Convert Esd to Wim<br>
-                        Convert Wim to Esd<br>
-                        LZMS Solid compression for Install.wim<br>
-                        Integrate custom Regedit files<br>
-                        Add custom cursor files<br>
-                        Add custom media files<br>
-                        Add custom theme files<br>
-                        Add custom System32 files<br>
-                        Add custom SysWOW64 files<br>
-                        Add custom desktop background files<br>
-                        Add custom desktop files and folders.</p>
-                    <button class="btn btn-outline-dark" id="popup_close" onclick="closeChangelogPopup()">Close</button>
-                </div>
+                    <div id="popup-content2" style="overflow-y: scroll; height: 200px;">
+                        <h2>Changelog</h2>
+                        <p id="pstyle">
+                            ★★ Version 2.1 ★★<br>
+                            Added feature to change OEM information <br>
+                            Automatically skip the "Press any key to continue..." prompt on Windows boot screen <br>
+                            Added "23H2" option to Windows Update for selecting the next Windows version. <br>
+                            <br>
+                            ★★ Version 2.0 ★★<br>
+                            Unattended Application Installation Feature was problematic, now fixed. <br>
+                            Minor design changes. <br>
+                            Some bug fixes. <br> 
+                            Added feature to change Image Name and Description. <br>
+                            Hide Taskbar MeetNow icon on Windows 10. <br>
+                            Disable Bing search in Start Menu. <br>
+                            <br>
+                            ★★ Version 1.9 ★★<br>
+                            Added Unattended Program Installation feature (Experimental!)<br>
+                            Hide the Taskbar MeetNow icon.<br>
+                            Disable Bing search in the Start Menu.<br>
+                            <br>
+                            ★★ Version 1.8 Hotfix ★★<br>
+                            All registry issues have been resolved.<br>
+                            Instead of deleting indexes one by one in the Index Deletion feature, now multiple indexes can be deleted at once.<br>
+                            <br>
+                            ★★ Version 1.8 ★★<br>
+                            Simplified the Windows 11 TPM Fix feature.<br>
+                            Added GUI interface to the ISO Creation section.<br>
+                            Added option to never prompt for User Account Control settings.<br>
+                            Added option to show detailed information during Start-up, Shut-down, Log-on and Log-off.<br>
+                            Added automatic NumLock activation on start-up.<br>
+                            Improved control mechanisms and fixed several bugs.<br>
+                            <br>
+                            ★★ Version 1.7 ★★<br>
+                            Added feature to add shortcut to Context Menu.<br>
+                            Updated to WimLib version 1.14.<br>
+                            Some specific improvements and bug fixes.<br>
+                            <br>
+                            ★★ Version 1.6 ★★<br>
+                            <br>
+                            Added Microsoft Store integration feature<br>
+                            Added GUI interface to the ISO file extraction section in the folder<br>
+                            Updated the interface of the ToolkitHelper debloat method to be more modern.<br>
+                            <br>
+                            ★★ Version 1.5 ★★<br>
+                            <br>
+                            Added Dism Reset Base<br>
+                            Added the ability to integrate drivers.<br>
+                            <br>
+                            ★★ Version 1.4 ★★<br>
+                            <br>
+                            ToolkitHelper method added to the Debloat section<br>
+                            Some minor bugs fixed<br>
+                            <br>
+                            ★★ Version 1.3 ★★<br>
+                            <br>
+                            Minor bug fixes<br>
+                            The problem of creating a [DELETED] folder after saving the changes has been resolved.<br> This means that the wim size will now be much smaller.
+                            Dism Reset Base feature has been removed,<br> and you can run the alternative<br> "Compress System Files after the System is Booted" <br>feature instead.
+                            15 new Windows services added to the list.<br>
+                            All services in the list can be disabled with a single click.<br>
+                            <br>
+                            ★★ Version 1.2 ★★<br>
+                            <br>
+                            Improved Autounattend.xml file creation section.<br>
+                            Improved DefaultLayout.xml feature<br>
+                            Make Windows App Theme Dark Mode<br>
+                            Make Windows Theme Dark Mode<br>
+                            Add My Computer shortcut to Desktop<br>
+                            Add Control Panel shortcut to Desktop<br>
+                            Fixed the feature to turn off automatic installation of Microsoft Teams<br>
+                            Add MASS_AIO Windows Activation Script to Desktop<br>
+                            Bypass Windows 11 TPM/SecureBoot feature now works<br>
+                            Added a small addition for developer support<br>
+                            <br>
+                            ★★ Version 1.1 ★★<br>
+                            <br>
+                            Windows Services added<br>
+                            ISO Output will now be saved in the "ISO" folder<br>
+                            Windows Update settings added to select the next Windows version<br>
+                            Autounattend.xml file creation feature added<br>
+                            Some spelling mistakes fixed.<br>
+                            <br>
+                            ★★ Version 1.0 ★★<br>
+                            <br>
+                            Initial build v1.0 Beta<br>
+                            Debloat<br>
+                            Remove OneDrive<br>
+                            Remove Microsoft Edge<br>
+                            Remove Windows Defender<br>
+                            Remove WinPE<br>
+                            Remove Internet Explorer<br>
+                            Enable-Disable Windows Features<br>
+                            Enable Windows Photo Viewer<br>
+                            Add Take Ownership to right-click menu<br>
+                            Remove 260 character limit<br>
+                            Disable Visual Feedback<br>
+                            Add End Unresponsive Processes to right-click menu<br>
+                            Add Empty Recycle Bin to right-click menu<br>
+                            Disable Step Recorder<br>
+                            Disable AutoPlay<br>
+                            Disable Enhanced Directory Creation<br>
+                            Disable App Launch Tracking<br>
+                            Turn off XBox Game Bar<br>
+                            Disable Hardware Accelerated GPU Scheduling<br>
+                            Turn off ReadyBoost<br>
+                            Add Old Volume Control to right-click menu<br>
+                            Add Copy as Path option to right-click menu<br>
+                            Disable JPEG Desktop Wallpaper Quality Reduction<br>
+                            Bypass Windows 11 TPM/SecureBoot<br>
+                            Disable Reserved Storage<br>
+                            Remove "Your device does not meet the minimum requirements" watermark on Windows 11 Desktop<br>
+                            Disable Modern Standby<br>
+                            Remove Windows Defender<br>
+                            Disable "Let's finish setting up your device" prompt in Windows 11<br>
+                            Disable Privacy Settings Experience during sign-in in Windows 11<br>
+                            Disable OneDrive in Windows 11<br>
+                            Disable Kernel Isolation Memory Integrity in Windows 11<br>
+                            Disable including drivers in Windows updates<br>
+                            Disable automatic Windows upgrade<br>
+                            Remove Chat button from taskbar in Windows 11<br>
+                            Restore old right-click context menu in Windows 11<br>
+                            Turn off automatic installation of Microsoft Teams<br>
+                            Start Dism Reset Base process<br>
+                            Convert Esd to Wim<br>
+                            Convert Wim to Esd<br>
+                            LZMS Solid compression for Install.wim<br>
+                            Integrate custom Regedit files<br>
+                            Add custom cursor files<br>
+                            Add custom media files<br>
+                            Add custom theme files<br>
+                            Add custom System32 files<br>
+                            Add custom SysWOW64 files<br>
+                            Add custom desktop background files<br>
+                            Add custom desktop files and folders.</p>
+                        <button class="btn btn-outline-dark" id="popup_close" onclick="closeChangelogPopup()">Close</button>
+                    </div>
                 </div>
                 <div id="about-popup">
                 <div id="popup-content">
@@ -410,19 +416,24 @@
                     <div class="listing-entry-size">—</div>
                 </div>
                 <div class="listing-entry">
+                    <div class="listing-entry-name"><a acolor href="https://vip.shades-cloud.workers.dev/0:/ShadesToolkit%20TR/ShadesToolkit_TR-v2.1.zip"><i class="ri-file-zip-line"></i> ShadesToolkit TR v2.1</a></div>
+                    <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
+                    <div class="listing-entry-size">18.47 MB</div>
+                </div>
+                <div class="listing-entry">
                     <div class="listing-entry-name"><a acolor href="https://vip.shades-cloud.workers.dev/0:/ShadesToolkit%20TR/ShadesToolkit_TR-v2.0.zip"><i class="ri-file-zip-line"></i> ShadesToolkit TR v2.0</a></div>
                     <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
-                    <div class="listing-entry-size">18.25MB</div>
+                    <div class="listing-entry-size">18.25 MB</div>
                 </div>
                 <div class="listing-entry">
                     <div class="listing-entry-name"><a acolor href="https://vip.shades-cloud.workers.dev/0:/ShadesToolkit%20TR/ShadesToolkit_TR-v1.9.zip"><i class="ri-file-zip-line"></i> ShadesToolkit TR v1.9</a></div>
                     <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
-                    <div class="listing-entry-size">18.07MB</div>
+                    <div class="listing-entry-size">18.07 MB</div>
                 </div>
                 <div class="listing-entry">
                     <div class="listing-entry-name"><a acolor href="https://vip.shades-cloud.workers.dev/0:/ShadesToolkit%20TR/ShadesToolkit_TR-v1.8.zip"><i class="ri-file-zip-line"></i> ShadesToolkit TR v1.8</a></div>
                     <div class="listing-entry-modified-time" data-modified-time=>2023-04-01</div>
-                    <div class="listing-entry-size">18.05MB</div>
+                    <div class="listing-entry-size">18.05 MB</div>
                 </div>
             </div>
             <div class="footer">
